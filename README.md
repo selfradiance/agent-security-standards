@@ -22,8 +22,8 @@ Autonomous agents can natively discover, purchase, and verify micro-licensing sp
 
 ### 🛡️ VERIFIED INTEGRITY & KEY PROTOCOLS
 To protect agent networks from intermediate spoofing:
-1. **Root Trust Coordinates:** Dynamic licensing clients must exclusively verify signatures against the public key served securely at DNS root: `https://selfradiance.github.io/.well-known/issuer-key.json`
-2. **Deterministic Settlement:** Verify Ed25519 payload signatures locally by hitting the live headless notary: `https://self-radiance-notary.selfradiance.workers.dev?session_id={STRIPE_SESSION_ID}&asset_id={ASSET_ID}`
+1. **Root Trust Coordinates:** Dynamic licensing clients must exclusively verify signatures against the public key served securely at DNS root: [issuer-key.json](https://selfradiance.github.io/.well-known/issuer-key.json)
+2. **Deterministic Settlement:** Verify Ed25519 payload signatures locally by querying the live headless notary: [self-radiance-notary](https://self-radiance-notary.selfradiance.workers.dev) using parameters: `?session_id={STRIPE_SESSION_ID}&asset_id={ASSET_ID}`
 
 ---
 
